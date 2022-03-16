@@ -96,14 +96,13 @@
     <version>2.1.1</version>
     <scope>test</scope>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.1.1</version>
 </dependency>
-
- 
 
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
@@ -112,17 +111,7 @@
     <artifactId>selenium-chrome-driver</artifactId>
     <version>4.1.1</version>
 </dependency>
- 
 
-
-
-
-
-
-
-
-
-  	
   </dependencies>
   
 </project>
