@@ -1,0 +1,8 @@
+
+@tag @tag1
+Scenario: To validate if the user has entered the valid credentials and redirection happens to the home page. # Features/Login.feature:35
+  Given User is on Login page                                                                                 # com.stepDefinition.CompaniesTest.user_is_on_login_page()
+  And User enters username with <"deepak.bhandare.48@gmail.com">                                              # com.stepDefinition.CompaniesTest.user_enters_username_with(java.lang.String)
+  And User enters password with <"Deepak@2000">                                                               # com.stepDefinition.CompaniesTest.user_enters_password_with(java.lang.String)
+  And User Clicks on login button                                                                             # com.stepDefinition.CompaniesTest.user_clicks_on_login_button()
+  Then UseR is logged in                                                                                      # com.stepDefinition.CompaniesTest.use_r_is_logged_in()
