@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class CompaniesTest {
+public class CompaniesTest extends com.runner.FreeCRMRunner{
 	public static WebDriver driver;
 @Given("User is on Login page")
 public void user_is_on_login_page() {
