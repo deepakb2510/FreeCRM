@@ -20,9 +20,36 @@
 Feature: Verification of Login page functionality
   I want to use this template for my feature file
 
-Background: User is on FreeCRM page 
-
-  @tag1
+Background: User is on FreeCRM page
+	@tag1
+  Scenario: To validate if the user has not entered any credentials.
+    Given User is on Login page
+    And User Clicks on login button
+    Then Enter username and password message should appear
+    
+  @tag2
+  Scenario: To validate if user has entered only username 
+    And User enters username with <"<username>"> 	
+    And User Clicks on login button
+    Then Enter password message should appear
+    
+    Examples:
+    	|username|
+    	|deepak.bhandare.48@gmail.com|
+    	
+    	
+ 
+  @tag3
+  Scenario: To validate if user has entered only password
+    And User enters password with <"<password>">
+    And User Clicks on login button
+    Then Enter username message should appear
+ 
+    Examples: 
+      |password|   
+      |Deepak@2000| 
+ 
+  @tag4
   Scenario: To validate if the user has entered the valid credentials and redirection happens to the home page.
     Given User is on Login page
     And User enters username with <"<username>"> 	
