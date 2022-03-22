@@ -1,6 +1,0 @@
-com\runner\Companies.class
-com\stepDefinition\AddContact.class
-com\stepDefinition\CreateDeals.class
-com\stepDefinition\LoginTest.class
-com\runner\FreeCRMRunner.class
-com\stepDefinition\CompaniesTest.class
