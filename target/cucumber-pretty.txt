@@ -1,0 +1,11 @@
+
+@CompanyFilter @AddFilters
+Scenario: To validate whether user is able to add new filters.                                                                                 # Features/Companies/CompanyFilter.feature:20
+  Given User is Logged in and is in Companies Module                                                                                           # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on Show filter in Companies Module                                                                                           # com.stepDefinition.CompaniesTest.user_clicks_on_show_filter()
+  And user selects appropriate value for Search as <"Name"> , Operator as <"Equals"> and Equals as <"Capgemini Worldwide"> in Companies Module # com.stepDefinition.CompaniesTest.user_selects_appropriate_value_for_search_as_operator_as_and_equals_as(java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on Save Search in Companies Module                                                                                           # com.stepDefinition.CompaniesTest.user_clicks_on_save_search()
+  Then Filter should get saved and displayed in Filters Dropdown in Companies Module                                                           # com.stepDefinition.CompaniesTest.filter_should_get_saved_and_displayed_in_filters_dropdown()
+
+@CompanyFilter @ApplyFilters
+Scenario: To validate whether user is able to apply filters on companies added to view them                                                 # Features/Companies/CompanyFilter.feature:23

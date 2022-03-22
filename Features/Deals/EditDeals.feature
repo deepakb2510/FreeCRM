@@ -23,15 +23,14 @@ Feature: Verification of edit the deal functionality
   @tag1
   Scenario: To validate that the details page of the selected deal is opened when the user clicks on the edit deals option
     Given User is on the deals page
-    And User clicks on the edit button
+    And User clicks on the edit button to edit the deal
     Then User is redirected to edit deal page
 
   @tag2
   Scenario: To validate if the edited details are saved for the deal which was edited by the user
   	Given User is on the edit deal page
     And User enters the description of the deal with <"<descdeals>">
-    And User enters completion details with <"<completiondeals>">
-    And User on the save button
+    And User clicks on the save button to save the edited deal
     Then User is redirected to deal details page and is able to see the changes made
 
     Examples: 

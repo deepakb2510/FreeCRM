@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="10" ignored="0" total="10" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2027" started-at="2022-03-22T21:01:52 IST" finished-at="2022-03-22T21:01:54 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="FreeCRMRunner.Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" class="com.runner.FreeCRMRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="2027" started-at="2022-03-22T21:01:52 IST" finished-at="2022-03-22T21:01:54 IST">
+      <class name="com.runner.FreeCRMRunner">
+        <test-method status="PASS" signature="setUpCucumber()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpCucumber" is-config="true" duration-ms="831" started-at="2022-03-22T21:01:52 IST" finished-at="2022-03-22T21:01:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCucumber -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T21:01:53 IST" finished-at="2022-03-22T21:01:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="208" started-at="2022-03-22T21:01:53 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to add new filters."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CompanyFilter.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="42" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to apply filters on companies added to view them"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CompanyFilter.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="61" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to remove filters if required."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CompanyFilter.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="27" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether redirection happens to create companies form after clicking on create."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CreateCompany.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="29" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered details in the all mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CreateCompany.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to cancel the creation of companies is required"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CreateCompany.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="22" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to unable to create company if  Mandatory details not filled."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CreateCompany.feature:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="23" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether valid mobile number is accpeting only digits in create company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/CreateCompany.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="24" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to delete company after clicking on delete button/"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/DeleteCompany.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="19" started-at="2022-03-22T21:01:54 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T21:01:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate user is able to cancel the deletion process if required."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \src\test\resources\datasource\logincompanies.xlsx (The system cannot find the path specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(FileInputStream.java:195)
+at java.io.FileInputStream.<init>(FileInputStream.java:138)
+at com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module(CompaniesTest.java:43)
+at ✽.User is Logged in and is in Companies Module(file:///C:/Users/Deepak/eclipse-workspace/FreeCRM/Features/Companies/DeleteCompany.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="tearDownClass" is-config="true" duration-ms="633" started-at="2022-03-22T21:01:54 IST" finished-at="2022-03-22T21:01:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.FreeCRMRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

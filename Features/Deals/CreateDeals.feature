@@ -14,7 +14,7 @@
 #@ (Tags/Labels):To group Scenarios
 #<> (placeholder)
 #""
-## (Comments)
+# (Comments)
 #Sample Feature Definition Template
 @tag
 Feature: Verification of a create a new deal functionality
@@ -40,5 +40,5 @@ Background: User is logged into FreeCRM and on the deals page
 	@tag3
 	Scenario: To validate if the user has entered details in the all mandatory field
 		Given User is on the create deal page
-		And User clicks on the save button
-		Then User is redirected to the task details page which is created
+		And User clicks on the save button to create the deal
+		Then User is redirected to the deal details page which is created

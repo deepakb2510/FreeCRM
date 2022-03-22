@@ -16,28 +16,26 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+#@tag
+#Feature: Verification of delete contact(s) functionality
+  #I want to use this template for my feature file
+#
 @tag
-Feature: Verification of delete contact(s) functionality
+Feature: Verification of delete Contact(s) functionality
   I want to use this template for my feature file
 
-  @tag1
-  Scenario: To validate whether the user has an option to delete contact(s) if required.
-  
-    Given User is on the Contacts page
-    And User clicks on required Contact
-		And User clicks on the Delete button
-		When A delete confirmation pops up
-		And User clicks on Delete
-    Then Selected Contact(s) are deleted
-
-  @tag2
-  Scenario Outline: To validate whether the user is able to Cancel the deletion process if requred.
-    Given User is on the Contact page
-		And User clicks on the Delete button on the required contact
-		When A delete confirmation pops up
-		And User clicks on Delete
-		And User clicks on Cancel		
-	  Then User is redirected to the Contacts page
-	  
-	  
-//ts 35
+Background: User is logged into FreeCRM and on the Contacts page   
+@tag1
+  Scenario: To validate that the user is able to delete an existing Contact
+    Given User is on the contacts page and wants to delete an existing contact
+    And User clicks on the delete button for the existing contact
+    And A delete confirmation pops up
+    And User clicks on Delete
+		Then The required contact is deleted and user is redirected to the Contacts page   
+	@tag2
+  Scenario Outline: To validate whether the user is able to Cancel the deletion process if requred
+    Given User is on the Contact page and wants to cancel the deletion process
+		And User clicks on the delete button on the required contact
+		And A delete confirmation pops up after clicking the delete button
+		And User clicks on Cancel button
+	  Then User is redirected to the Contacts page and the deletion process is cancelled

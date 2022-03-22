@@ -27,9 +27,9 @@ import io.cucumber.testng.PickleWrapper;
  
 
 @CucumberOptions(
-features="Features",
+features="Features//Companies",
 glue={"com.stepDefinition"},
-plugin={"html:target/cucumber-html-report", "json:target/cucumber.json","pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml"},
+plugin={"html:target/cucumber-html-report.html", "json:target/cucumber.json","pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml","pretty","html:target/HtmlReports.html"},
 dryRun = false,
 monochrome = true
 
@@ -59,10 +59,10 @@ public class FreeCRMRunner {
 //	 capability.setCapability(CapabilityType.VERSION,version);
 //	 capability.setCapability(CapabilityType.PLATFORM, platform); 
 //	 capability.setCapability("build", "Your Build Name");
-	 System.setProperty("webdriver.chrome.driver", "E:\\Capgemini training\\drivers\\chromedriver_win32\\chromedriver.exe");
-	 connection = new ChromeDriver();
-	  
-	 System.out.println(connection);
+//	 System.setProperty("webdriver.chrome.driver", "E:\\Capgemini training\\drivers\\chromedriver_win32\\chromedriver.exe");
+//	 connection = new ChromeDriver();
+//	  
+//	 System.out.println("Conn="+connection);
 	}
 	 
 	 
@@ -79,5 +79,6 @@ public class FreeCRMRunner {
 	 @AfterClass(alwaysRun = true)
 	 public void tearDownClass() throws Exception {
 	 testNGCucumberRunner.finish();
+ 
 	 }
 }

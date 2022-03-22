@@ -23,28 +23,12 @@ Feature: Verification of add filter to Contact functionality
 Background: User is logged into FreeCRM and on the Contacts page  
 
   @tag1
-  Scenario: To validate that the user can filter the contacts based on various criterias.
-    Given User is on the Contacts page
+  Scenario: To validate that the user can filter the contacts based on various criterias
+    Given User is on the Contacts page and applying filters
     And User clicks on the show filters button
     And User selects the type for search
     And User selects an operator for search filter
-    And User enters the value with <"<searchfiltercontacts>">
-
-    Examples: 
-      | searchfiltercontacts  |
-      | anusmita |
-	
-	@tag2
-	Scenario: To validate whether the correct contacts have appeared according to the filter criteria.
-		Given User is on the Contacts page 
-		And User clicks on the appropriate filter from the dropdown menu
-		And User clicks on clear
-		Then User is able to view the Contacts with the filters applied
-
-	@tag3
-	Scenario: To validate whether user is able to remove filters if required.		
-		Given User is on the contacts page 
+    And User enters the value with <"Anusmita">
 		And User clicks on the filter button
-		Then The filter applied gets removed if clicked on clear.	
-    
-//tc108
+		Then User is able to view the contacts with the filters applied
+	

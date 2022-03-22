@@ -24,18 +24,14 @@ Background: User is logged into FreeCRM and on the Deals page
 
   @tag1
   Scenario: To validate if the user is able to apply filter(s) on the deals page
-    Given User is on the Deals page
-    And User clicks on the show filters button
-    And User selects the type for search
-    And User selects an operator for search filter
-    And User enters the value with <"<searchfilterdeals>">
+    Given User is on the deals page
+    And User clicks on the show filters button to filter the deal
+    And User selects the type for search the deal
+    And User selects an operator for search filter for the deal
+    And User enters the value to filter the deal with <"<searchfilterdeals>">
+    And User clicks on the filter button to filter the deal
+		Then User is able to view the deals with the filters applied
 
     Examples: 
       | searchfilterdeals  |
       | demo5 |
-	
-	@tag2
-	Scenario: To validate that the deals are displayed according to the filters that are applied by the user
-		Given User is on the deals page 
-		And User clicks on the filter button
-		Then User is able to view the deals with the filters applied

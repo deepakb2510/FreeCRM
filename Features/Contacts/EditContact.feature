@@ -16,30 +16,21 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+#@tag
 Feature: Verification of edit contact(s) functionality.
   I want to use this template for my feature file
   
 Background: User is logged into FreeCRM and on the Contacts page 
 
-  @tag1
-  Scenario: To validate whether the user is redirected to the Contact detail page  of the selected Contact when the user clicks on the edit button.    Given I want to write a step with precondition
-    Given User is on the Contacts page
-		And User clicks on the Edit button
-		And User enters Middle Name with <"<middlename>">
-		And User on the Save button
-    Then User is redirected to Contact details page and is able to see the changes made
-    
-    Examples: 
-      | middlename  |
-      | samanta     |
-    
+    @tag1
+  Scenario: To validate that the details page of the selected Contact is opened when the user clicks on the edit tasks option
+    Given User is on the Contacts page and editing the required contact
+    And User clicks on the edit button
+    Then User is redirected to edit contact page
+  
   @tag2
-  Scenario Outline: To validate if the user is able to cancel the edit Contact process if required
-    Given User is on the Contact page
-		And User clicks on the Edit button on the required contact
-		And User clicks on Cancel		
-	  Then User is redirected to the Contacts page
-	  
-	  //tc 100
-    
+  Scenario: To validate if the edited details are saved for the contact which was edited by the user
+  	Given User is on the edit contact page
+		And User enters Middle Name with <"Samanta">    
+		And User on the save button
+    Then User is redirected to Contact details page and is able to see the changes made

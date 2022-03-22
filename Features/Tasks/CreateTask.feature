@@ -16,30 +16,31 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+
 @tag
 Feature: Verification of a create a new task functionality
   I want to use this template for my feature file
-
-  Background: User is logged into FreeCRM and on the Tasks page
-
+  
   @tag1
   Scenario: To validate that redirection happens to the task details page if the create task button is clicked and user is able to create a task successfully
     Given User is on the tasks page
     And User clicks on the create tasks button
     Then User is redirected to the create tasks page
 
-  @tag2
-  Scenario: To validate if the user has entered details in the all mandatory field
-    Given User is on the create task page
-    And User enters the title of the task with <"<tasktitle>">
-
-    Examples:
-      | tasktitle |
-      | demo5     |
-
-  @tag3
-  Scenario: To validate if the user has entered details in the all mandatory field
-    Given User is on the create task page
-    And User clicks on the save button
-    Then User is redirected to the deal details page which is created
-
+	@tag2
+	Scenario: To validate if the user has entered details in the all mandatory field
+		Given User is on the tasks page
+		And User clicks on the create tasks button
+		And User enters the title of the task with <"<tasktitle>">
+		And User clicks on the save button in task module
+		Then User is redirected to the task details page which is created
+    Examples: 
+      |tasktitle|
+      |demo7|
+		
+	@tag4
+	Scenario: To check that user has to enter all the mandatory fields
+		Given User is on the tasks page
+		And User clicks on the create tasks button
+		And User clicks on the save button in task module
+		Then User is displayed a warning text in task module

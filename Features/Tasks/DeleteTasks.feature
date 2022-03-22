@@ -16,20 +16,22 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+
+
 @tag
 Feature: Verification of delete task(s) functionality
   I want to use this template for my feature file
 
-Background: User is logged into FreeCRM and on the Tasks page 
-
   @tag1
   Scenario: To validate that the user is able to delete an existing task
     Given User is on the tasks page
-    And User clicks on the delete button for the existing task
-    Then A delete confirmation pops up
-   
-  @tag2
-  Scenario: To validate that the user is able to cancel the deletion process if required
-  	Given User is displayed a delete confirmation pop up
-    And User clicks on the cancel button 
+    And User clicks on the delete button for the existing task in task module
+    And User clicks on the cancel button in task module
     Then User is redirected to the tasks page and the deletion process is cancelled
+
+  @tag2
+  Scenario: To validate if the user is able to delete a task
+  	Given User is on the tasks page
+  	And User clicks on the delete button for the existing task in task module
+  	And User clicks on the Delete button in task module
+  	Then User is redirected to tasks page and task is deleted

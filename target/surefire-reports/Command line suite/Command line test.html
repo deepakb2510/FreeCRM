@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 22 14:15:16 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>540 seconds (540596 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the details page of the selected deal is opened when the user clicks on the edit deals option", "Optional[Verification of edit the deal functionality]"</td>
+<td></td>
+<td>19</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether phone number has 10 digits.", "Optional[Verification of add contact(s) functionality.]"</td>
+<td></td>
+<td>6</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the user has not entered any credentials.", "Optional[Verification of Login page functionality]"</td>
+<td></td>
+<td>13</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether the user can Cancel the creation of Contact if required.", "Optional[Verification of add contact(s) functionality.]"</td>
+<td></td>
+<td>9</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if user has entered only password", "Optional[Verification of Login page functionality]"</td>
+<td></td>
+<td>16</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate user is able to cancel the deletion process if required.", "Optional[Verification of delete a company functionality]"</td>
+<td></td>
+<td>23</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the user can filter the contacts based on various criterias", "Optional[Verification of add filter to Contact functionality]"</td>
+<td></td>
+<td>33</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the user is able to apply filter(s) on the deals page", "Optional[Verification of add filter to deal functionality]"</td>
+<td></td>
+<td>34</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether valid mobile number is accpeting only digits in create company", "Optional[Verification of create a company functionality]"</td>
+<td></td>
+<td>21</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the user has entered details in the all mandatory field", "Optional[Verification of a create a new deal functionality]"</td>
+<td></td>
+<td>8</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the user is able to delete an existing Contact", "Optional[Verification of delete Contact(s) functionality]"</td>
+<td></td>
+<td>20</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether user is able to apply filters on companies added to view them", "Optional[Verification of add filter to company functionality]"</td>
+<td></td>
+<td>20</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether the user has entered First Name and Last Name.", "Optional[Verification of add contact(s) functionality.]"</td>
+<td></td>
+<td>3</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether user is able to remove filters if required.", "Optional[Verification of add filter to company functionality]"</td>
+<td></td>
+<td>20</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether the user is able to select Company from the already created Companies.", "Optional[Verification of add contact(s) functionality.]"</td>
+<td></td>
+<td>5</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether user is able to cancel the creation of companies is required", "Optional[Verification of create a company functionality]"</td>
+<td></td>
+<td>14</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the edited details are saved for the deal which was edited by the user", "Optional[Verification of edit the deal functionality]"</td>
+<td></td>
+<td>9</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that redirection happens to the deals details page if the create deal button is clicked and user is able to create a deal successfully", "Optional[Verification of a create a new deal functionality]"</td>
+<td></td>
+<td>22</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether the Contact detail page appears after giving the mandatory fields and clicking on Save", "Optional[Verification of add contact(s) functionality.]"</td>
+<td></td>
+<td>6</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the user has entered details in the all mandatory field", "Optional[Verification of a create a new deal functionality]"</td>
+<td></td>
+<td>5</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the user is able to cancel the deletion process if required", "Optional[Verification of delete deal(s) functionality]"</td>
+<td></td>
+<td>4</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether redirection happens to create companies form after clicking on create.", "Optional[Verification of create a company functionality]"</td>
+<td></td>
+<td>17</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the user has entered the valid credentials and redirection happens to the home page.", "Optional[Verification of Login page functionality]"</td>
+<td></td>
+<td>16</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether user is able to delete company after clicking on delete button/", "Optional[Verification of delete a company functionality]"</td>
+<td></td>
+<td>20</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the details page of the selected Contact is opened when the user clicks on the edit tasks option", "Optional[Verification of edit contact(s) functionality.]"</td>
+<td></td>
+<td>10</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the user is able to delete an existing deal", "Optional[Verification of delete deal(s) functionality]"</td>
+<td></td>
+<td>21</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether user is able to unable to create company if  Mandatory details not filled.", "Optional[Verification of create a company functionality]"</td>
+<td></td>
+<td>16</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether the user is able to Cancel the deletion process if requred", "Optional[Verification of delete Contact(s) functionality]"</td>
+<td></td>
+<td>8</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate whether user is able to add new filters.", "Optional[Verification of add filter to company functionality]"</td>
+<td></td>
+<td>19</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the user has entered details in the all mandatory fields", "Optional[Verification of create a company functionality]"</td>
+<td></td>
+<td>20</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if the edited details are saved for the contact which was edited by the user", "Optional[Verification of edit contact(s) functionality.]"</td>
+<td></td>
+<td>15</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate if user has entered only username", "Optional[Verification of Login page functionality]"</td>
+<td></td>
+<td>16</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+<tr>
+<td title='com.stepDefinition.CompaniesTest.Scenario()'><b>Scenario</b><br>Test class: com.stepDefinition.CompaniesTest<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that redirection happens to the Contact creation page if the create Contact button is clicked", "Optional[Verification of add contact(s) functionality.]"</td>
+<td></td>
+<td>35</td>
+<td>com.stepDefinition.CompaniesTest@1e7c7811</td></tr>
+</table><p>
+</body>
+</html>

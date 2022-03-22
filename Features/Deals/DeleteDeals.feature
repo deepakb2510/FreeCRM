@@ -26,10 +26,10 @@ Background: User is logged into FreeCRM and on the Deals page
   Scenario: To validate that the user is able to delete an existing deal
     Given User is on the deals page
     And User clicks on the delete button for the existing deal
-    Then A delete confirmation pops up
+    Then A delete confirmation pops up to delete the deal
 
   @tag2
   Scenario: To validate that the user is able to cancel the deletion process if required
-  	Given User is displayed a delete confirmation pop up
-    And User clicks on the cancel button 
+  	Given User is displayed a delete confirmation pop up for deleting the deal
+    And User clicks on the cancel button to cancel the deal deletion 
     Then User is redirected to the deals page and the deletion process is cancelled
