@@ -27,7 +27,7 @@ import io.cucumber.testng.PickleWrapper;
  
 
 @CucumberOptions(
-features="Features//Companies",
+features="Features",
 glue={"com.stepDefinition"},
 plugin={"html:target/cucumber-html-report.html", "json:target/cucumber.json","pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml","pretty","html:target/HtmlReports.html"},
 dryRun = false,
