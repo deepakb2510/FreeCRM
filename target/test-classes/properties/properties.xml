@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<freecrm>
+	<contact>
+	<email>/html/body/div[1]/div/div/form/div/div[1]/div/input</email>
+	<pass>password</pass>
+	<login>//*[@id="ui"]/div/div/form/div/div[3]</login>
+	<contactbutton>/html/body/div[1]/div/div[1]/div[3]/a</contactbutton>
+	<createbutton>//*[@id="dashboard-toolbar"]/div[2]/div/a/button</createbutton>
+</contact>
+<login>
+	<email>//input[@placeholder='E-mail address']</email>
+	<username>/html/body/div[1]/div/div/form/div/div[1]/div/input</username>
+	<pass>password</pass>
+	<psw>password</psw>
+	<submit>//div[@class='ui fluid large blue submit button']</submit>
+	<invalid>//*[@id="ui"]/div/div/form/div/div[3]/div</invalid>
+	<taskspage>//i[@class='tasks icon']</taskspage>
+	
+</login>
+	<companies>
+		<email>email</email>
+		<pass>password</pass>
+		<submit>//div[@class='ui fluid large blue submit button']</submit>
+		<createbtn>//button[normalize-space()='Create']</createbtn>
+		<createform>/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]</createform>
+		<companyname>/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]</companyname>
+		<companysave>//button[@class='ui linkedin button']</companysave>
+		<companysavename>//*[@id="dashboard-toolbar"]/div[1]</companysavename>
+		<companyformcancel>//button[@class='ui button']</companyformcancel>
+		<savebtn>//*[@id=\"dashboard-toolbar\"]/div[2]/div/button[2]</savebtn>
+		<saveerr>#main-content > div > div.ui.fluid.container.main-content > form > div:nth-child(1) > div:nth-child(1) > div > label > span</saveerr>
+		<mobileno>//input[@placeholder='Number']</mobileno>
+		<delete>/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[1]/td[4]/div/button</delete>
+		<confirmdelete>/html[1]/body[1]/div[3]/div[1]/div[3]/button[2]</confirmdelete>
+		<companydashboard>//*[@id="dashboard-toolbar"]/div[1]</companydashboard>
+		<deletecancel>/html/body/div[3]/div/div[3]/button[1]</deletecancel>
+		
+		<!--Filter companies  -->
+		<showfilter>.linkedin:nth-child(2)</showfilter>
+		<search>.search > .search</search>
+		<selectname>.visible > .selected</selectname>
+		<opreator>.field .default</opreator>
+		<operatorselect>.visible > .selected > .text</operatorselect>
+		<value>value</value>
+		<savesearch>.small:nth-child(4)</savesearch> 
+		<clear>.ban</clear>
+		<filtersearch>/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/button[5]</filtersearch>
+		
+		<cancelfilter>/html/body/div[3]/div/div[3]/button[1]</cancelfilter>
+	
+	</companies>
+<deals>
+		<title>//input[@name='title']</title>
+		<description>//textarea[@name='description']</description>
+		<dealbtn>//span[normalize-space()='Deals']</dealbtn>
+		<createbtn>//button[@class='ui linkedin button']//i[@class='edit icon']</createbtn>
+		<savebtn>//button[@class='ui linkedin button']</savebtn>
+	</deals>
+	
+	
+	<createtask>
+		<createbutton>//button[@class='ui linkedin button']//i[@class='edit icon']</createbutton>
+		<title>//input[@name='title']</title>
+		<save>//button[@class='ui linkedin button']</save>
+		<warning>//*[@id="main-content"]/div/div[2]/form/div[1]/div[1]/div/label/span</warning>
+	</createtask>
+	
+	<edittask>
+		<edit>//*[@id="main-content"]/div/div[2]/div/table/tbody/tr[1]/td[7]/a[2]/button</edit>
+		<description>/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/form[1]/div[6]/div[1]/div[1]/textarea[1]</description>
+		<completion>//input[@name='completion']</completion>
+	</edittask>
+	
+	<deletetask>
+		<delete>//*[@id="main-content"]/div/div[2]/div/table/tbody/tr[1]/td[7]/div/button</delete>
+		<cancel>/html[1]/body[1]/div[3]/div[1]/div[3]/button[1]</cancel>
+		<delete_pop>/html[1]/body[1]/div[3]/div[1]/div[3]/button[2]/i[1]</delete_pop>
+	</deletetask>
+	
+	<filtertask>
+		<filter>//button[normalize-space()='Show Filters']</filter>
+		<search>//input[@class='search']</search>
+		<search_click>//*[@id=\"main-content\"]/div/div[2]/form/div[2]/div/div/div[1]/div/div[2]/div[1]</search_click>
+		<type>//div[@name='operator']</type>
+		<value>//input[@placeholder='Value']</value>
+		<filter_search>//i[@class='search small icon']</filter_search>
+		<clear_filter>//i[@class='ban small icon']</clear_filter>
+	</filtertask>
+	<calendar>
+	<cal>//span[normalize-space()='Calendar']</cal>
+	<create>//button[@class='ui linkedin button']</create>
+	<title>//input[@name='title']</title>
+	<save>//i[@class='save icon']</save>
+
+</calendar>
+</freecrm>

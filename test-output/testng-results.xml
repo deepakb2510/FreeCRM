@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="44" passed="44">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="874130" started-at="2022-03-22T22:36:00 IST" finished-at="2022-03-22T22:50:34 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="FreeCRMRunner.Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" class="com.runner.FreeCRMRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="874130" started-at="2022-03-22T22:36:00 IST" finished-at="2022-03-22T22:50:34 IST">
+      <class name="com.runner.FreeCRMRunner">
+        <test-method status="PASS" signature="setUpCucumber()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpCucumber" is-config="true" duration-ms="927" started-at="2022-03-22T22:36:00 IST" finished-at="2022-03-22T22:36:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCucumber -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:36:01 IST" finished-at="2022-03-22T22:36:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="30695" started-at="2022-03-22T22:36:01 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:36:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that redirection happens to the calendar details page if the create event button is clicked and user is able to create a event successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new event functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:36:32 IST" finished-at="2022-03-22T22:36:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="6315" started-at="2022-03-22T22:36:32 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:36:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered details in the all mandatory field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new event functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:36:38 IST" finished-at="2022-03-22T22:36:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="9343" started-at="2022-03-22T22:36:38 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:36:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered details in the all mandatory field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new event functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="19996" started-at="2022-03-22T22:36:48 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:37:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to add new filters."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:36:48 IST" finished-at="2022-03-22T22:36:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:37:08 IST" finished-at="2022-03-22T22:37:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25397" started-at="2022-03-22T22:37:08 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:37:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to apply filters on companies added to view them"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:37:33 IST" finished-at="2022-03-22T22:37:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25916" started-at="2022-03-22T22:37:33 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:37:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to remove filters if required."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:37:59 IST" finished-at="2022-03-22T22:37:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="22511" started-at="2022-03-22T22:37:59 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:38:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether redirection happens to create companies form after clicking on create."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:38:22 IST" finished-at="2022-03-22T22:38:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="24610" started-at="2022-03-22T22:38:22 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:38:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered details in the all mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="19824" started-at="2022-03-22T22:38:46 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:39:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to cancel the creation of companies is required"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:38:46 IST" finished-at="2022-03-22T22:38:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:39:06 IST" finished-at="2022-03-22T22:39:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25032" started-at="2022-03-22T22:39:06 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:39:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to unable to create company if  Mandatory details not filled."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="27686" started-at="2022-03-22T22:39:31 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:39:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether valid mobile number is accpeting only digits in create company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of create a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:39:31 IST" finished-at="2022-03-22T22:39:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25293" started-at="2022-03-22T22:39:59 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:40:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether user is able to delete company after clicking on delete button/"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:39:59 IST" finished-at="2022-03-22T22:39:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:40:24 IST" finished-at="2022-03-22T22:40:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="28772" started-at="2022-03-22T22:40:24 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:40:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate user is able to cancel the deletion process if required."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete a company functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:40:53 IST" finished-at="2022-03-22T22:40:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="34393" started-at="2022-03-22T22:40:53 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:41:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that redirection happens to the Contact creation page if the create Contact button is clicked"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:41:27 IST" finished-at="2022-03-22T22:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="3296" started-at="2022-03-22T22:41:27 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:41:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether the user has entered First Name and Last Name."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:41:30 IST" finished-at="2022-03-22T22:41:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="5311" started-at="2022-03-22T22:41:30 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:41:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether the user is able to select Company from the already created Companies."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:41:36 IST" finished-at="2022-03-22T22:41:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="6509" started-at="2022-03-22T22:41:36 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:41:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether phone number has 10 digits."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="6260" started-at="2022-03-22T22:41:42 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:41:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether the Contact detail page appears after giving the mandatory fields and clicking on Save"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:41:42 IST" finished-at="2022-03-22T22:41:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:41:49 IST" finished-at="2022-03-22T22:41:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="9417" started-at="2022-03-22T22:41:49 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:41:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether the user can Cancel the creation of Contact if required."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:41:58 IST" finished-at="2022-03-22T22:41:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="20372" started-at="2022-03-22T22:41:58 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:42:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the user is able to delete an existing Contact"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete Contact(s) functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:42:18 IST" finished-at="2022-03-22T22:42:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="8198" started-at="2022-03-22T22:42:18 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:42:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate whether the user is able to Cancel the deletion process if requred"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete Contact(s) functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:42:26 IST" finished-at="2022-03-22T22:42:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="10450" started-at="2022-03-22T22:42:26 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:42:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the details page of the selected Contact is opened when the user clicks on the edit tasks option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of edit contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="14804" started-at="2022-03-22T22:42:37 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:42:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the edited details are saved for the contact which was edited by the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of edit contact(s) functionality.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:42:37 IST" finished-at="2022-03-22T22:42:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="33063" started-at="2022-03-22T22:42:52 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:43:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the user can filter the contacts based on various criterias"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to Contact functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:42:52 IST" finished-at="2022-03-22T22:42:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:43:25 IST" finished-at="2022-03-22T22:43:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="27652" started-at="2022-03-22T22:43:25 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:43:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that redirection happens to the deals details page if the create deal button is clicked and user is able to create a deal successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new deal functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:43:52 IST" finished-at="2022-03-22T22:43:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="5200" started-at="2022-03-22T22:43:52 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:43:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered details in the all mandatory field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new deal functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:43:58 IST" finished-at="2022-03-22T22:43:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="7986" started-at="2022-03-22T22:43:58 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:44:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered details in the all mandatory field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new deal functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:44:06 IST" finished-at="2022-03-22T22:44:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="26818" started-at="2022-03-22T22:44:06 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:44:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the user is able to delete an existing deal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete deal(s) functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:44:32 IST" finished-at="2022-03-22T22:44:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="4885" started-at="2022-03-22T22:44:32 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:44:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the user is able to cancel the deletion process if required"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete deal(s) functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:44:37 IST" finished-at="2022-03-22T22:44:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="24384" started-at="2022-03-22T22:44:37 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:45:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the details page of the selected deal is opened when the user clicks on the edit deals option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of edit the deal functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:45:02 IST" finished-at="2022-03-22T22:45:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="9130" started-at="2022-03-22T22:45:02 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:45:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the edited details are saved for the deal which was edited by the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of edit the deal functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:45:11 IST" finished-at="2022-03-22T22:45:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="39093" started-at="2022-03-22T22:45:11 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:45:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user is able to apply filter(s) on the deals page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to deal functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:45:50 IST" finished-at="2022-03-22T22:45:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="18869" started-at="2022-03-22T22:45:50 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:46:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has not entered any credentials."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of Login page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="21154" started-at="2022-03-22T22:46:09 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:46:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if user has entered only username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of Login page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:46:09 IST" finished-at="2022-03-22T22:46:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:46:30 IST" finished-at="2022-03-22T22:46:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="21177" started-at="2022-03-22T22:46:30 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:46:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if user has entered only password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of Login page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="20744" started-at="2022-03-22T22:46:51 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:47:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered the valid credentials and redirection happens to the home page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of Login page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:46:51 IST" finished-at="2022-03-22T22:46:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:47:12 IST" finished-at="2022-03-22T22:47:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="19128" started-at="2022-03-22T22:47:12 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:47:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that redirection happens to the task details page if the create task button is clicked and user is able to create a task successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new task functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:47:31 IST" finished-at="2022-03-22T22:47:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25710" started-at="2022-03-22T22:47:31 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:47:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user has entered details in the all mandatory field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new task functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:47:57 IST" finished-at="2022-03-22T22:47:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="22598" started-at="2022-03-22T22:47:57 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:48:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check that user has to enter all the mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of a create a new task functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25459" started-at="2022-03-22T22:48:19 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:48:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the user is able to delete an existing task"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete task(s) functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:48:19 IST" finished-at="2022-03-22T22:48:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="25351" started-at="2022-03-22T22:48:45 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:49:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user is able to delete a task"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of delete task(s) functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:48:45 IST" finished-at="2022-03-22T22:48:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="1" started-at="2022-03-22T22:49:10 IST" finished-at="2022-03-22T22:49:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="26466" started-at="2022-03-22T22:49:10 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:49:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that the details page of the selected task is opened when the user clicks on the edit tasks option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of edit the task functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="26656" started-at="2022-03-22T22:49:37 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:50:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the edited details are saved for the task which was edited by the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of edit the task functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:49:37 IST" finished-at="2022-03-22T22:49:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="setUpClass" is-config="true" duration-ms="0" started-at="2022-03-22T22:50:03 IST" finished-at="2022-03-22T22:50:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="Scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="Scenario" duration-ms="29834" started-at="2022-03-22T22:50:03 IST" description="Runs Cucumber Feature" data-provider="Scenarios" finished-at="2022-03-22T22:50:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate if the user is able to apply filter(s) on the tasks page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verification of add filter to task functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.FreeCRMRunner@6483f5ae]" name="tearDownClass" is-config="true" duration-ms="1324" started-at="2022-03-22T22:50:33 IST" finished-at="2022-03-22T22:50:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.FreeCRMRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

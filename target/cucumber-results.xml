@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="44" time="872.05">
+<testcase classname="Verification of a create a new event functionality" name="To validate that redirection happens to the calendar details page if the create event button is clicked and user is able to create a event successfully" time="30.526">
+<system-out><![CDATA[Given User is on the event page.............................................passed
+And User clicks on the create event button..................................passed
+Then User is redirected to the create event page............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new event functionality" name="To validate if the user has entered details in the all mandatory field" time="6.249">
+<system-out><![CDATA[Given User is on the create event page......................................passed
+And User enters the title of the event with <"Sprint2">.....................passed
+Then User is able to create event...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new event functionality" name="To validate if the user has entered details in the all mandatory field 2" time="9.317">
+<system-out><![CDATA[Given User is on the create event page......................................passed
+And User clicks on the save button..........................................passed
+Then User is redirected to the event details page which is created..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add filter to company functionality" name="To validate whether user is able to add new filters." time="19.966">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on Show filter in Companies Module..........................passed
+And user selects appropriate value for Search as <"Name"> , Operator as <"Equals"> and Equals as <"Capgemini Worldwide"> in Companies Module.passed
+And User clicks on Save Search in Companies Module..........................passed
+Then Filter should get saved and displayed in Filters Dropdown in Companies Module.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add filter to company functionality" name="To validate whether user is able to apply filters on companies added to view them" time="25.367">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on Show filter in Companies Module..........................passed
+And user selects appropriate value for Search as <"<search>"> , Operator as <"<operator>"> and Equals as <"<equals>"> in Companies Module.passed
+And User clicks on Search in Companies Module...............................passed
+Then Companies should get filtered appropriately............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add filter to company functionality" name="To validate whether user is able to remove filters if required." time="25.901">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on Show filter in Companies Module..........................passed
+And user selects appropriate value for Search as <"<search>"> , Operator as <"<operator>"> and Equals as <"<equals>"> in Companies Module.passed
+And User clicks on Search in Companies Module...............................passed
+And User clicks on Clear in Companies Module................................passed
+Then Filter results should get removed in Companies Module..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of create a company functionality" name="To validate whether redirection happens to create companies form after clicking on create." time="22.489">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on create in Companies Module...............................passed
+Then Create Company form should open........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of create a company functionality" name="To validate if the user has entered details in the all mandatory fields" time="24.592">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on create in Companies Module...............................passed
+And User Fills the Company Name as <"Capgemini"> in Companies Module........passed
+And User clicks on save in Companies Module.................................passed
+Then Company data should get saved..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of create a company functionality" name="To validate whether user is able to cancel the creation of companies is required" time="19.813">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on create in Companies Module...............................passed
+And User clicks on cancel in Companies Module...............................passed
+Then Form should close and user should be redirected to the Companies Module.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of create a company functionality" name="To validate whether user is able to unable to create company if  Mandatory details not filled." time="25.021">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on create in Companies Module...............................passed
+And User clicks on save in Companies Module.................................passed
+Then User should get error stating to enter mandatory details in Companies Module.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of create a company functionality" name="To validate whether valid mobile number is accpeting only digits in create company" time="27.671">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on create in Companies Module...............................passed
+And User Fills the Company Name as <"Capgemini With Number"> in Companies Module.passed
+And User Enters Mobile number as <"9987326348"> in Companies Module.........passed
+And User clicks on save in Companies Module.................................passed
+Then Company data should get saved..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete a company functionality" name="To validate whether user is able to delete company after clicking on delete button/" time="25.282">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on Delete button in Companies Module........................passed
+And User clicks on Confirm Delete in Companies Module.......................passed
+Then Company should get deleted and user is back on Companies module........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete a company functionality" name="To validate user is able to cancel the deletion process if required." time="28.758">
+<system-out><![CDATA[Given User is Logged in and is in Companies Module..........................passed
+And User clicks on Delete button in Companies Module........................passed
+And User clicks on Cancel button in Companies Module........................passed
+Then Company should not get deleted and user is back on Companies module....passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add contact(s) functionality." name="To validate that redirection happens to the Contact creation page if the create Contact button is clicked" time="34.382">
+<system-out><![CDATA[Given User is on the Contacts page..........................................passed
+And User clicks on the Create button........................................passed
+Then User is redirected to the Create New Contact page......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add contact(s) functionality." name="To validate whether the user has entered First Name and Last Name." time="3.287">
+<system-out><![CDATA[Given User is on the Create Contact page....................................passed
+And User enters First Name and Last Name with <"Anusmita"> and <"Sarkar">...passed
+Then Contact detail page should appear with the First Name and Last Name....passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add contact(s) functionality." name="To validate whether the user is able to select Company from the already created Companies." time="5.301">
+<system-out><![CDATA[Given User is on the Create Contact page....................................passed
+And User selects Company....................................................passed
+Then Selected Company appears...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add contact(s) functionality." name="To validate whether phone number has 10 digits." time="6.496">
+<system-out><![CDATA[Given User is on the Create Contact page and has entered the mandatory fields.passed
+And User enters Phone Number................................................passed
+Then Contact details are getting saved even if  valid details are not entered by the user.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add contact(s) functionality." name="To validate whether the Contact detail page appears after giving the mandatory fields and clicking on Save" time="6.251">
+<system-out><![CDATA[Given User is on the Create Contact page....................................passed
+And User clicks on Save.....................................................passed
+Then User is redirected to the Contact detail page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add contact(s) functionality." name="To validate whether the user can Cancel the creation of Contact if required." time="9.408">
+<system-out><![CDATA[Given User is on the Create Contact page....................................passed
+And User clicks on Cancel...................................................passed
+Then User is redirected to the Contacts page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete Contact(s) functionality" name="To validate that the user is able to delete an existing Contact" time="20.357">
+<system-out><![CDATA[Given User is on the contacts page and wants to delete an existing contact..passed
+And User clicks on the delete button for the existing contact...............passed
+And A delete confirmation pops up...........................................passed
+And User clicks on Delete...................................................passed
+Then The required contact is deleted and user is redirected to the Contacts page.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete Contact(s) functionality" name="To validate whether the user is able to Cancel the deletion process if requred" time="8.185">
+<system-out><![CDATA[Given User is on the Contact page and wants to cancel the deletion process..passed
+And User clicks on the delete button on the required contact................passed
+And A delete confirmation pops up after clicking the delete button..........passed
+And User clicks on Cancel button............................................passed
+Then User is redirected to the Contacts page and the deletion process is cancelled.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of edit contact(s) functionality." name="To validate that the details page of the selected Contact is opened when the user clicks on the edit tasks option" time="10.438">
+<system-out><![CDATA[Given User is on the Contacts page and editing the required contact.........passed
+And User clicks on the edit button..........................................passed
+Then User is redirected to edit contact page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of edit contact(s) functionality." name="To validate if the edited details are saved for the contact which was edited by the user" time="14.792">
+<system-out><![CDATA[Given User is on the edit contact page......................................passed
+And User enters Middle Name with <"Samanta">................................passed
+And User on the save button.................................................passed
+Then User is redirected to Contact details page and is able to see the changes made.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add filter to Contact functionality" name="To validate that the user can filter the contacts based on various criterias" time="33.048">
+<system-out><![CDATA[Given User is on the Contacts page and applying filters.....................passed
+And User clicks on the show filters button..................................passed
+And User selects the type for search........................................passed
+And User selects an operator for search filter..............................passed
+And User enters the value with <"Anusmita">.................................passed
+And User clicks on the filter button........................................passed
+Then User is able to view the contacts with the filters applied.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new deal functionality" name="To validate that redirection happens to the deals details page if the create deal button is clicked and user is able to create a deal successfully" time="27.64">
+<system-out><![CDATA[Given User is on the deals page.............................................passed
+And User clicks on the create deals button..................................passed
+Then User is redirected to the create deals page............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new deal functionality" name="To validate if the user has entered details in the all mandatory field" time="5.191">
+<system-out><![CDATA[Given User is on the create deal page.......................................passed
+And User enters the title of the deal with <"demo5">........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new deal functionality" name="To validate if the user has entered details in the all mandatory field 2" time="7.975">
+<system-out><![CDATA[Given User is on the create deal page.......................................passed
+And User clicks on the save button to create the deal.......................passed
+Then User is redirected to the deal details page which is created...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete deal(s) functionality" name="To validate that the user is able to delete an existing deal" time="26.808">
+<system-out><![CDATA[Given User is on the deals page.............................................passed
+And User clicks on the delete button for the existing deal..................passed
+Then A delete confirmation pops up to delete the deal.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete deal(s) functionality" name="To validate that the user is able to cancel the deletion process if required" time="4.873">
+<system-out><![CDATA[Given User is displayed a delete confirmation pop up for deleting the deal..passed
+And User clicks on the cancel button to cancel the deal deletion............passed
+Then User is redirected to the deals page and the deletion process is cancelled.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of edit the deal functionality" name="To validate that the details page of the selected deal is opened when the user clicks on the edit deals option" time="24.375">
+<system-out><![CDATA[Given User is on the deals page.............................................passed
+And User clicks on the edit button to edit the deal.........................passed
+Then User is redirected to edit deal page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of edit the deal functionality" name="To validate if the edited details are saved for the deal which was edited by the user" time="9.115">
+<system-out><![CDATA[Given User is on the edit deal page.........................................passed
+And User enters the description of the deal with <"this is demo5">..........passed
+And User clicks on the save button to save the edited deal..................passed
+Then User is redirected to deal details page and is able to see the changes made.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add filter to deal functionality" name="To validate if the user is able to apply filter(s) on the deals page" time="39.078">
+<system-out><![CDATA[Given User is on the deals page.............................................passed
+And User clicks on the show filters button to filter the deal...............passed
+And User selects the type for search the deal...............................passed
+And User selects an operator for search filter for the deal.................passed
+And User enters the value to filter the deal with <"demo5">.................passed
+And User clicks on the filter button to filter the deal.....................passed
+Then User is able to view the deals with the filters applied................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Login page functionality" name="To validate if the user has not entered any credentials." time="18.857">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User Clicks on login button.............................................passed
+Then Invalid request message should appear..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Login page functionality" name="To validate if user has entered only username" time="21.144">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User enters only username with <"deepak.bhandare.48@gmail.com">.........passed
+And User Clicks on login button.............................................passed
+Then Invalid request message should appear..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Login page functionality" name="To validate if user has entered only password" time="21.162">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User enters only password with <"Deepak@2000">..........................passed
+And User Clicks on login button.............................................passed
+Then Invalid request message should appear..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Login page functionality" name="To validate if the user has entered the valid credentials and redirection happens to the home page." time="20.733">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User enters username with <"deepak.bhandare.48@gmail.com">..............passed
+And User enters password with <"Deepak@2000">...............................passed
+And User Clicks on login button.............................................passed
+Then UseR is logged in......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new task functionality" name="To validate that redirection happens to the task details page if the create task button is clicked and user is able to create a task successfully" time="19.119">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the create tasks button..................................passed
+Then User is redirected to the create tasks page............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new task functionality" name="To validate if the user has entered details in the all mandatory field" time="25.694">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the create tasks button..................................passed
+And User enters the title of the task with <"demo7">........................passed
+And User clicks on the save button in task module...........................passed
+Then User is redirected to the task details page which is created...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of a create a new task functionality" name="To check that user has to enter all the mandatory fields" time="22.588">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the create tasks button..................................passed
+And User clicks on the save button in task module...........................passed
+Then User is displayed a warning text in task module........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete task(s) functionality" name="To validate that the user is able to delete an existing task" time="25.45">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the delete button for the existing task in task module...passed
+And User clicks on the cancel button in task module.........................passed
+Then User is redirected to the tasks page and the deletion process is cancelled.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of delete task(s) functionality" name="To validate if the user is able to delete a task" time="25.341">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the delete button for the existing task in task module...passed
+And User clicks on the Delete button in task module.........................passed
+Then User is redirected to tasks page and task is deleted...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of edit the task functionality" name="To validate that the details page of the selected task is opened when the user clicks on the edit tasks option" time="26.454">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the edit button in task module...........................passed
+Then User is redirected to edit task page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of edit the task functionality" name="To validate if the edited details are saved for the task which was edited by the user" time="26.633">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the edit button in task module...........................passed
+And User enters the description of the task with <"this is demo5">..........passed
+And User enters completion details with <"80">..............................passed
+And User clicks on the save button in task module...........................passed
+Then User is redirected to task details page and is able to see the changes made.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of add filter to task functionality" name="To validate if the user is able to apply filter(s) on the tasks page" time="29.823">
+<system-out><![CDATA[Given User is on the tasks page.............................................passed
+And User clicks on the show filters button in task module...................passed
+And User selects the type for search in task module.........................passed
+And User selects an operator for search filter in task module...............passed
+And User enters the value with <"demo5"> in Task module.....................passed
+And User clicks on the filter button in task module.........................passed
+And User clicks on the clear button in task module..........................passed
+Then User is able to view the tasks with the filters applied................passed
+]]></system-out>
+</testcase>
+</testsuite>

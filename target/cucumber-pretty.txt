@@ -1,0 +1,310 @@
+
+@tag @tag1
+Scenario: To validate that redirection happens to the calendar details page if the create event button is clicked and user is able to create a event successfully # Features/Calendar/CreateCalendar.feature:8
+  Given User is on the event page                                                                                                                                 # com.stepDefinition.Calendar.user_is_on_the_event_page()
+  And User clicks on the create event button                                                                                                                      # com.stepDefinition.Calendar.user_clicks_on_the_create_event_button()
+  Then User is redirected to the create event page                                                                                                                # com.stepDefinition.Calendar.user_is_redirected_to_the_create_event_page()
+
+@tag @tag2
+Scenario: To validate if the user has entered details in the all mandatory field # Features/Calendar/CreateCalendar.feature:20
+  Given User is on the create event page                                         # com.stepDefinition.Calendar.user_is_on_the_create_event_page()
+  And User enters the title of the event with <"Sprint2">                        # com.stepDefinition.Calendar.user_enters_the_title_of_the_event_with(java.lang.String)
+  Then User is able to create event                                              # com.stepDefinition.Calendar.user_is_able_to_create_event()
+
+@tag @tag3
+Scenario: To validate if the user has entered details in the all mandatory field # Features/Calendar/CreateCalendar.feature:25
+  Given User is on the create event page                                         # com.stepDefinition.Calendar.user_is_on_the_create_event_page()
+  And User clicks on the save button                                             # com.stepDefinition.Calendar.user_clicks_on_the_save_button()
+  Then User is redirected to the event details page which is created             # com.stepDefinition.Calendar.user_is_redirected_to_the_event_details_page_which_is_created()
+
+@CompanyFilter @AddFilters
+Scenario: To validate whether user is able to add new filters.                                                                                 # Features/Companies/CompanyFilter.feature:20
+  Given User is Logged in and is in Companies Module                                                                                           # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on Show filter in Companies Module                                                                                           # com.stepDefinition.CompaniesTest.user_clicks_on_show_filter()
+  And user selects appropriate value for Search as <"Name"> , Operator as <"Equals"> and Equals as <"Capgemini Worldwide"> in Companies Module # com.stepDefinition.CompaniesTest.user_selects_appropriate_value_for_search_as_operator_as_and_equals_as(java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on Save Search in Companies Module                                                                                           # com.stepDefinition.CompaniesTest.user_clicks_on_save_search()
+  Then Filter should get saved and displayed in Filters Dropdown in Companies Module                                                           # com.stepDefinition.CompaniesTest.filter_should_get_saved_and_displayed_in_filters_dropdown()
+
+@CompanyFilter @ApplyFilters
+Scenario: To validate whether user is able to apply filters on companies added to view them                                                 # Features/Companies/CompanyFilter.feature:23
+  Given User is Logged in and is in Companies Module                                                                                        # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on Show filter in Companies Module                                                                                        # com.stepDefinition.CompaniesTest.user_clicks_on_show_filter()
+  And user selects appropriate value for Search as <"<search>"> , Operator as <"<operator>"> and Equals as <"<equals>"> in Companies Module # com.stepDefinition.CompaniesTest.user_selects_appropriate_value_for_search_as_operator_as_and_equals_as(java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on Search in Companies Module                                                                                             # com.stepDefinition.CompaniesTest.user_clicks_on_search()
+  Then Companies should get filtered appropriately                                                                                          # com.stepDefinition.CompaniesTest.companies_should_get_filtered_appropriately()
+
+@CompanyFilter @RemoveFilters
+Scenario: To validate whether user is able to remove filters if required.                                                                   # Features/Companies/CompanyFilter.feature:35
+  Given User is Logged in and is in Companies Module                                                                                        # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on Show filter in Companies Module                                                                                        # com.stepDefinition.CompaniesTest.user_clicks_on_show_filter()
+  And user selects appropriate value for Search as <"<search>"> , Operator as <"<operator>"> and Equals as <"<equals>"> in Companies Module # com.stepDefinition.CompaniesTest.user_selects_appropriate_value_for_search_as_operator_as_and_equals_as(java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on Search in Companies Module                                                                                             # com.stepDefinition.CompaniesTest.user_clicks_on_search()
+  And User clicks on Clear in Companies Module                                                                                              # com.stepDefinition.CompaniesTest.user_clicks_on_clear()
+  Then Filter results should get removed in Companies Module                                                                                # com.stepDefinition.CompaniesTest.filter_results_should_get_removed()
+
+@CreateCompany @CreatingTheCompany
+Scenario: To validate whether redirection happens to create companies form after clicking on create. # Features/Companies/CreateCompany.feature:9
+  Given User is Logged in and is in Companies Module                                                 # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on create in Companies Module                                                      # com.stepDefinition.CompaniesTest.user_clicks_on_create()
+  Then Create Company form should open                                                               # com.stepDefinition.CompaniesTest.create_company_form_should_open()
+
+@CreateCompany @MandartoryField
+Scenario Outline: To validate if the user has entered details in the all mandatory fields # Features/Companies/CreateCompany.feature:23
+  Given User is Logged in and is in Companies Module                                      # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on create in Companies Module                                           # com.stepDefinition.CompaniesTest.user_clicks_on_create()
+  And User Fills the Company Name as <"Capgemini"> in Companies Module                    # com.stepDefinition.CompaniesTest.user_fills_the_company_name_as(java.lang.String)
+  And User clicks on save in Companies Module                                             # com.stepDefinition.CompaniesTest.user_clicks_on_save()
+  Then Company data should get saved                                                      # com.stepDefinition.CompaniesTest.company_data_should_get_saved()
+
+@CreateCompany @CancelCreationOfCompany
+Scenario Outline: To validate whether user is able to cancel the creation of companies is required # Features/Companies/CreateCompany.feature:26
+  Given User is Logged in and is in Companies Module                                               # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on create in Companies Module                                                    # com.stepDefinition.CompaniesTest.user_clicks_on_create()
+  And User clicks on cancel in Companies Module                                                    # com.stepDefinition.CompaniesTest.user_clicks_on_cancel_button()
+  Then Form should close and user should be redirected to the Companies Module                     # com.stepDefinition.CompaniesTest.form_should_close_and_user_should_be_redirected_to_the_companies_module()
+
+@CreateCompany @UnableToCreateCompany
+Scenario Outline: To validate whether user is able to unable to create company if  Mandatory details not filled. # Features/Companies/CreateCompany.feature:33
+  Given User is Logged in and is in Companies Module                                                             # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on create in Companies Module                                                                  # com.stepDefinition.CompaniesTest.user_clicks_on_create()
+  And User clicks on save in Companies Module                                                                    # com.stepDefinition.CompaniesTest.user_clicks_on_save()
+  Then User should get error stating to enter mandatory details in Companies Module                              # com.stepDefinition.CompaniesTest.user_should_get_error_stating_to_enter_manfatory_details()
+
+@CreateCompany @ValidMobileNumber
+Scenario Outline: To validate whether valid mobile number is accpeting only digits in create company # Features/Companies/CreateCompany.feature:50
+  Given User is Logged in and is in Companies Module                                                 # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on create in Companies Module                                                      # com.stepDefinition.CompaniesTest.user_clicks_on_create()
+  And User Fills the Company Name as <"Capgemini With Number"> in Companies Module                   # com.stepDefinition.CompaniesTest.user_fills_the_company_name_as(java.lang.String)
+  And User Enters Mobile number as <"9987326348"> in Companies Module                                # com.stepDefinition.CompaniesTest.user_enters_mobile_number_as(java.lang.String)
+  And User clicks on save in Companies Module                                                        # com.stepDefinition.CompaniesTest.user_clicks_on_save()
+  Then Company data should get saved                                                                 # com.stepDefinition.CompaniesTest.company_data_should_get_saved()
+
+@DeleteCompany @Delete
+Scenario: To validate whether user is able to delete company after clicking on delete button/ # Features/Companies/DeleteCompany.feature:11
+  Given User is Logged in and is in Companies Module                                          # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on Delete button in Companies Module                                        # com.stepDefinition.CompaniesTest.user_clicks_on_delete_button()
+  And User clicks on Confirm Delete in Companies Module                                       # com.stepDefinition.CompaniesTest.user_clicks_on_confirm_delete()
+  Then Company should get deleted and user is back on Companies module                        # com.stepDefinition.CompaniesTest.company_should_get_deleted_and_user_is_back_on_companies_module()
+
+@DeleteCompany @CancelDeletion
+Scenario: To validate user is able to cancel the deletion process if required. # Features/Companies/DeleteCompany.feature:18
+  Given User is Logged in and is in Companies Module                           # com.stepDefinition.CompaniesTest.user_is_logged_in_and_is_in_companies_module()
+  And User clicks on Delete button in Companies Module                         # com.stepDefinition.CompaniesTest.user_clicks_on_delete_button()
+  And User clicks on Cancel button in Companies Module                         # com.stepDefinition.CompaniesTest.user_clicks_on_cancel_button_in()
+  Then Company should not get deleted and user is back on Companies module     # com.stepDefinition.CompaniesTest.company_should_not_get_deleted_and_user_is_back_on_companies_module()
+
+@tag @tag1
+Scenario: To validate that redirection happens to the Contact creation page if the create Contact button is clicked # Features/Contacts/AddContact.feature:26
+  Given User is on the Contacts page                                                                                # com.stepDefinition.AddContact.user_is_on_the_contacts_page()
+  And User clicks on the Create button                                                                              # com.stepDefinition.AddContact.user_clicks_on_the_create_button()
+  Then User is redirected to the Create New Contact page                                                            # com.stepDefinition.AddContact.user_is_redirected_to_the_create_new_contact_page()
+
+@tag @tag2
+Scenario: To validate whether the user has entered First Name and Last Name. # Features/Contacts/AddContact.feature:42
+  Given User is on the Create Contact page                                   # com.stepDefinition.AddContact.user_is_on_the_contact_page()
+  And User enters First Name and Last Name with <"Anusmita"> and <"Sarkar">  # com.stepDefinition.AddContact.user_enters_first_name_and_last_name_with_and(java.lang.String,java.lang.String)
+  Then Contact detail page should appear with the First Name and Last Name   # com.stepDefinition.AddContact.contact_detail_page_should_appear_with_the_first_name_and_last_name()
+
+@tag @tag3
+Scenario: To validate whether the user is able to select Company from the already created Companies. # Features/Contacts/AddContact.feature:53
+  Given User is on the Create Contact page                                                           # com.stepDefinition.AddContact.user_is_on_the_contact_page()
+  And User selects Company                                                                           # com.stepDefinition.AddContact.user_selects_company()
+  Then Selected Company appears                                                                      # com.stepDefinition.AddContact.selected_company_appears()
+
+@tag @tag4
+Scenario: To validate whether phone number has 10 digits.                                   # Features/Contacts/AddContact.feature:64
+  Given User is on the Create Contact page and has entered the mandatory fields             # com.stepDefinition.AddContact.user_is_on_the_create_contact_page_and_has_entered_the_mandatory_fields()
+  And User enters Phone Number                                                              # com.stepDefinition.AddContact.user_enters_phone_number()
+  Then Contact details are getting saved even if  valid details are not entered by the user # com.stepDefinition.AddContact.contact_details_are_getting_saved_even_if_valid_details_are_not_entered_by_the_user()
+
+@tag @tag5
+Scenario: To validate whether the Contact detail page appears after giving the mandatory fields and clicking on Save # Features/Contacts/AddContact.feature:68
+  Given User is on the Create Contact page                                                                           # com.stepDefinition.AddContact.user_is_on_the_contact_page()
+  And User clicks on Save                                                                                            # com.stepDefinition.AddContact.user_clicks_on_save()
+  Then User is redirected to the Contact detail page                                                                 # com.stepDefinition.AddContact.user_is_redirected_to_the_contact_detail_page()
+
+@tag @tag6
+Scenario: To validate whether the user can Cancel the creation of Contact if required. # Features/Contacts/AddContact.feature:74
+  Given User is on the Create Contact page                                             # com.stepDefinition.AddContact.user_is_on_the_contact_page()
+  And User clicks on Cancel                                                            # com.stepDefinition.AddContact.user_clicks_on_cancel()
+  Then User is redirected to the Contacts page                                         # com.stepDefinition.AddContact.user_is_redirected_to_the_contacts_page()
+
+@tag @tag1
+Scenario: To validate that the user is able to delete an existing Contact          # Features/Contacts/DeleteContact.feature:29
+  Given User is on the contacts page and wants to delete an existing contact       # com.stepDefinition.AddContact.user_is_on_the_contacts_page_and_wants_to_delete_an_existing_contact()
+  And User clicks on the delete button for the existing contact                    # com.stepDefinition.AddContact.user_clicks_on_the_delete_button_for_the_existing_contact()
+  And A delete confirmation pops up                                                # com.stepDefinition.AddContact.a_delete_confirmation_pops_up()
+  And User clicks on Delete                                                        # com.stepDefinition.AddContact.user_clicks_on_delete()
+  Then The required contact is deleted and user is redirected to the Contacts page # com.stepDefinition.AddContact.the_required_contact_is_deleted_and_user_is_redirected_to_the_contacts_page()
+
+@tag @tag2
+Scenario Outline: To validate whether the user is able to Cancel the deletion process if requred # Features/Contacts/DeleteContact.feature:36
+  Given User is on the Contact page and wants to cancel the deletion process                     # com.stepDefinition.AddContact.user_is_on_the_contact_page_and_wants_to_cancel_the_deletion_process()
+  And User clicks on the delete button on the required contact                                   # com.stepDefinition.AddContact.user_clicks_on_the_delete_button_on_the_required_contact()
+  And A delete confirmation pops up after clicking the delete button                             # com.stepDefinition.AddContact.a_delete_confirmation_pops_up_after_clicking_the_delete_button()
+  And User clicks on Cancel button                                                               # com.stepDefinition.AddContact.user_clicks_on_cancel_button()
+  Then User is redirected to the Contacts page and the deletion process is cancelled             # com.stepDefinition.AddContact.user_is_redirected_to_the_contacts_page_and_the_deletion_process_is_cancelled()
+
+@tag1
+Scenario: To validate that the details page of the selected Contact is opened when the user clicks on the edit tasks option # Features/Contacts/EditContact.feature:26
+  Given User is on the Contacts page and editing the required contact                                                       # com.stepDefinition.AddContact.user_is_on_the_contacts_page_and_editing_the_required_contact()
+  And User clicks on the edit button                                                                                        # com.stepDefinition.AddContact.user_clicks_on_the_edit_button()
+  Then User is redirected to edit contact page                                                                              # com.stepDefinition.AddContact.user_is_redirected_to_edit_contact_page()
+
+@tag2
+Scenario: To validate if the edited details are saved for the contact which was edited by the user # Features/Contacts/EditContact.feature:32
+  Given User is on the edit contact page                                                           # com.stepDefinition.AddContact.user_is_on_the_edit_contact_page()
+  And User enters Middle Name with <"Samanta">                                                     # com.stepDefinition.AddContact.user_enters_middle_name_with(java.lang.String)
+  And User on the save button                                                                      # com.stepDefinition.AddContact.user_on_the_save_button()
+  Then User is redirected to Contact details page and is able to see the changes made              # com.stepDefinition.AddContact.user_is_redirected_to_contact_details_page_and_is_able_to_see_the_changes_made()
+
+@tag @tag1
+Scenario: To validate that the user can filter the contacts based on various criterias # Features/Contacts/FilterContacts.feature:26
+  Given User is on the Contacts page and applying filters                              # com.stepDefinition.AddContact.user_is_on_the_contacts_page_and_applying_filters()
+  And User clicks on the show filters button                                           # com.stepDefinition.AddContact.user_clicks_on_the_show_filters_button()
+  And User selects the type for search                                                 # com.stepDefinition.AddContact.user_selects_the_type_for_search()
+  And User selects an operator for search filter                                       # com.stepDefinition.AddContact.user_selects_an_operator_for_search_filter()
+  And User enters the value with <"Anusmita">                                          # com.stepDefinition.AddContact.user_enters_the_value_with(java.lang.String)
+  And User clicks on the filter button                                                 # com.stepDefinition.AddContact.user_clicks_on_the_filter_button()
+  Then User is able to view the contacts with the filters applied                      # com.stepDefinition.AddContact.user_is_able_to_view_the_contacts_with_the_filters_applied()
+
+@tag @tag1
+Scenario: To validate that redirection happens to the deals details page if the create deal button is clicked and user is able to create a deal successfully # Features/Deals/CreateDeals.feature:26
+  Given User is on the deals page                                                                                                                            # com.stepDefinition.CreateDeals.user_is_on_the_deals_page()
+  And User clicks on the create deals button                                                                                                                 # com.stepDefinition.CreateDeals.user_clicks_on_the_create_deals_button()
+  Then User is redirected to the create deals page                                                                                                           # com.stepDefinition.CreateDeals.user_is_redirected_to_the_create_deals_page()
+
+@tag @tag2
+Scenario: To validate if the user has entered details in the all mandatory field # Features/Deals/CreateDeals.feature:38
+  Given User is on the create deal page                                          # com.stepDefinition.CreateDeals.user_is_on_the_create_deal_page()
+  And User enters the title of the deal with <"demo5">                           # com.stepDefinition.CreateDeals.user_enters_the_title_of_the_deal_with(java.lang.String)
+
+@tag @tag3
+Scenario: To validate if the user has entered details in the all mandatory field # Features/Deals/CreateDeals.feature:41
+  Given User is on the create deal page                                          # com.stepDefinition.CreateDeals.user_is_on_the_create_deal_page()
+  And User clicks on the save button to create the deal                          # com.stepDefinition.CreateDeals.user_clicks_on_the_save_button()
+  Then User is redirected to the deal details page which is created              # com.stepDefinition.CreateDeals.user_is_redirected_to_the_task_details_page_which_is_created()
+
+@tag @tag1
+Scenario: To validate that the user is able to delete an existing deal # Features/Deals/DeleteDeals.feature:26
+  Given User is on the deals page                                      # com.stepDefinition.CreateDeals.user_is_on_the_deals_page()
+  And User clicks on the delete button for the existing deal           # com.stepDefinition.CreateDeals.user_clicks_on_the_delete_button_for_the_existing_deal()
+  Then A delete confirmation pops up to delete the deal                # com.stepDefinition.CreateDeals.a_delete_confirmation_pops_up()
+
+@tag @tag2
+Scenario: To validate that the user is able to cancel the deletion process if required # Features/Deals/DeleteDeals.feature:32
+  Given User is displayed a delete confirmation pop up for deleting the deal           # com.stepDefinition.CreateDeals.user_is_displayed_a_delete_confirmation_pop_up()
+  And User clicks on the cancel button to cancel the deal deletion                     # com.stepDefinition.CreateDeals.user_clicks_on_the_cancel_button()
+  Then User is redirected to the deals page and the deletion process is cancelled      # com.stepDefinition.CreateDeals.user_is_redirected_to_the_deals_page_and_the_deletion_process_is_cancelled()
+
+@tag @tag1
+Scenario: To validate that the details page of the selected deal is opened when the user clicks on the edit deals option # Features/Deals/EditDeals.feature:24
+  Given User is on the deals page                                                                                        # com.stepDefinition.CreateDeals.user_is_on_the_deals_page()
+  And User clicks on the edit button to edit the deal                                                                    # com.stepDefinition.CreateDeals.user_clicks_on_the_edit_button()
+  Then User is redirected to edit deal page                                                                              # com.stepDefinition.CreateDeals.user_is_redirected_to_edit_deal_page()
+
+@tag @tag2
+Scenario: To validate if the edited details are saved for the deal which was edited by the user # Features/Deals/EditDeals.feature:38
+  Given User is on the edit deal page                                                           # com.stepDefinition.CreateDeals.user_is_on_the_edit_deal_page()
+  And User enters the description of the deal with <"this is demo5">                            # com.stepDefinition.CreateDeals.user_enters_the_description_of_the_deal_with(java.lang.String)
+  And User clicks on the save button to save the edited deal                                    # com.stepDefinition.CreateDeals.user_on_the_save_button()
+  Then User is redirected to deal details page and is able to see the changes made              # com.stepDefinition.CreateDeals.user_is_redirected_to_deal_details_page_and_is_able_to_see_the_changes_made()
+
+@tag @tag1
+Scenario: To validate if the user is able to apply filter(s) on the deals page # Features/Deals/FilterDeals.feature:37
+  Given User is on the deals page                                              # com.stepDefinition.CreateDeals.user_is_on_the_deals_page()
+  And User clicks on the show filters button to filter the deal                # com.stepDefinition.CreateDeals.user_clicks_on_the_show_filters_button()
+  And User selects the type for search the deal                                # com.stepDefinition.CreateDeals.user_selects_the_type_for_search()
+  And User selects an operator for search filter for the deal                  # com.stepDefinition.CreateDeals.user_selects_an_operator_for_search_filter()
+  And User enters the value to filter the deal with <"demo5">                  # com.stepDefinition.CreateDeals.user_enters_the_value_with(java.lang.String)
+  And User clicks on the filter button to filter the deal                      # com.stepDefinition.CreateDeals.user_clicks_on_the_filter_button()
+  Then User is able to view the deals with the filters applied                 # com.stepDefinition.CreateDeals.user_is_able_to_view_the_deals_with_the_filters_applied()
+
+@tag @tag1
+Scenario: To validate if the user has not entered any credentials. # Features/Login/Login.feature:24
+  Given User is on Login page                                      # com.stepDefinition.LoginTest.user_is_on_login_page()
+  And User Clicks on login button                                  # com.stepDefinition.LoginTest.user_clicks_on_login_button()
+  Then Invalid request message should appear                       # com.stepDefinition.LoginTest.invalid_request_message_should_appear()
+
+@tag @tag2
+Scenario: To validate if user has entered only username               # Features/Login/Login.feature:38
+  Given User is on Login page                                         # com.stepDefinition.LoginTest.user_is_on_login_page()
+  And User enters only username with <"deepak.bhandare.48@gmail.com"> # com.stepDefinition.LoginTest.user_enters_only_username_with(java.lang.String)
+  And User Clicks on login button                                     # com.stepDefinition.LoginTest.user_clicks_on_login_button()
+  Then Invalid request message should appear                          # com.stepDefinition.LoginTest.invalid_request_message_should_appear()
+
+@tag @tag3
+Scenario: To validate if user has entered only password # Features/Login/Login.feature:50
+  Given User is on Login page                           # com.stepDefinition.LoginTest.user_is_on_login_page()
+  And User enters only password with <"Deepak@2000">    # com.stepDefinition.LoginTest.user_enters_only_password_with(java.lang.String)
+  And User Clicks on login button                       # com.stepDefinition.LoginTest.user_clicks_on_login_button()
+  Then Invalid request message should appear            # com.stepDefinition.LoginTest.invalid_request_message_should_appear()
+
+@tag @tag4
+Scenario: To validate if the user has entered the valid credentials and redirection happens to the home page. # Features/Login/Login.feature:62
+  Given User is on Login page                                                                                 # com.stepDefinition.LoginTest.user_is_on_login_page()
+  And User enters username with <"deepak.bhandare.48@gmail.com">                                              # com.stepDefinition.LoginTest.user_enters_username_with(java.lang.String)
+  And User enters password with <"Deepak@2000">                                                               # com.stepDefinition.LoginTest.user_enters_password_with(java.lang.String)
+  And User Clicks on login button                                                                             # com.stepDefinition.LoginTest.user_clicks_on_login_button()
+  Then UseR is logged in                                                                                      # com.stepDefinition.LoginTest.use_r_is_logged_in()
+
+@tag @tag1
+Scenario: To validate that redirection happens to the task details page if the create task button is clicked and user is able to create a task successfully # Features/Tasks/CreateTask.feature:25
+  Given User is on the tasks page                                                                                                                           # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the create tasks button                                                                                                                # com.stepDefinition.SprintTasks.user_clicks_on_the_create_tasks_button()
+  Then User is redirected to the create tasks page                                                                                                          # com.stepDefinition.SprintTasks.user_is_redirected_to_the_create_tasks_page()
+
+@tag @tag2
+Scenario: To validate if the user has entered details in the all mandatory field # Features/Tasks/CreateTask.feature:39
+  Given User is on the tasks page                                                # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the create tasks button                                     # com.stepDefinition.SprintTasks.user_clicks_on_the_create_tasks_button()
+  And User enters the title of the task with <"demo7">                           # com.stepDefinition.SprintTasks.user_enters_the_title_of_the_task_with(java.lang.String)
+  And User clicks on the save button in task module                              # com.stepDefinition.SprintTasks.user_clicks_on_the_save_button()
+  Then User is redirected to the task details page which is created              # com.stepDefinition.SprintTasks.user_is_redirected_to_the_task_details_page_which_is_created()
+
+@tag @tag4
+Scenario: To check that user has to enter all the mandatory fields # Features/Tasks/CreateTask.feature:42
+  Given User is on the tasks page                                  # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the create tasks button                       # com.stepDefinition.SprintTasks.user_clicks_on_the_create_tasks_button()
+  And User clicks on the save button in task module                # com.stepDefinition.SprintTasks.user_clicks_on_the_save_button()
+  Then User is displayed a warning text in task module             # com.stepDefinition.SprintTasks.user_is_displayed_a_warning_text()
+
+@tag @tag1
+Scenario: To validate that the user is able to delete an existing task            # Features/Tasks/DeleteTasks.feature:26
+  Given User is on the tasks page                                                 # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the delete button for the existing task in task module       # com.stepDefinition.SprintTasks.user_clicks_on_the_delete_button_for_the_existing_task()
+  And User clicks on the cancel button in task module                             # com.stepDefinition.SprintTasks.user_clicks_on_the_cancel_button()
+  Then User is redirected to the tasks page and the deletion process is cancelled # com.stepDefinition.SprintTasks.user_is_redirected_to_the_tasks_page_and_the_deletion_process_is_cancelled()
+
+@tag @tag2
+Scenario: To validate if the user is able to delete a task                  # Features/Tasks/DeleteTasks.feature:33
+  Given User is on the tasks page                                           # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the delete button for the existing task in task module # com.stepDefinition.SprintTasks.user_clicks_on_the_delete_button_for_the_existing_task()
+  And User clicks on the Delete button in task module                       # com.stepDefinition.SprintTasks.user_clicks_on_the_delete_button()
+  Then User is redirected to tasks page and task is deleted                 # com.stepDefinition.SprintTasks.user_is_redirected_to_tasks_page_and_task_is_deleted()
+
+@tag @tag1
+Scenario: To validate that the details page of the selected task is opened when the user clicks on the edit tasks option # Features/Tasks/EditTasks.feature:26
+  Given User is on the tasks page                                                                                        # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the edit button in task module                                                                      # com.stepDefinition.SprintTasks.user_clicks_on_the_edit_button()
+  Then User is redirected to edit task page                                                                              # com.stepDefinition.SprintTasks.user_is_redirected_to_edit_task_page()
+
+@tag @tag2
+Scenario: To validate if the edited details are saved for the task which was edited by the user # Features/Tasks/EditTasks.feature:42
+  Given User is on the tasks page                                                               # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the edit button in task module                                             # com.stepDefinition.SprintTasks.user_clicks_on_the_edit_button()
+  And User enters the description of the task with <"this is demo5">                            # com.stepDefinition.SprintTasks.user_enters_the_description_of_the_task_with(java.lang.String)
+  And User enters completion details with <"80">                                                # com.stepDefinition.SprintTasks.user_enters_completion_details_with(java.lang.String)
+  And User clicks on the save button in task module                                             # com.stepDefinition.SprintTasks.user_clicks_on_the_save_button()
+  Then User is redirected to task details page and is able to see the changes made              # com.stepDefinition.SprintTasks.user_is_redirected_to_task_details_page_and_is_able_to_see_the_changes_made()
+
+@tag @tag1
+Scenario: To validate if the user is able to apply filter(s) on the tasks page # Features/Tasks/FilterTasks.feature:21
+  Given User is on the tasks page                                              # com.stepDefinition.SprintTasks.user_is_on_the_tasks_page()
+  And User clicks on the show filters button in task module                    # com.stepDefinition.SprintTasks.user_clicks_on_the_show_filters_button()
+  And User selects the type for search in task module                          # com.stepDefinition.SprintTasks.user_selects_the_type_for_search()
+  And User selects an operator for search filter in task module                # com.stepDefinition.SprintTasks.user_selects_an_operator_for_search_filter()
+  And User enters the value with <"demo5"> in Task module                      # com.stepDefinition.SprintTasks.user_enters_the_value_with(java.lang.String)
+  And User clicks on the filter button in task module                          # com.stepDefinition.SprintTasks.user_clicks_on_the_filter_button()
+  And User clicks on the clear button in task module                           # com.stepDefinition.SprintTasks.user_clicks_on_the_clear_button()
+  Then User is able to view the tasks with the filters applied                 # com.stepDefinition.SprintTasks.user_is_able_to_view_the_tasks_with_the_filters_applied()
